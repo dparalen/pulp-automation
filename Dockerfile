@@ -21,4 +21,4 @@ RUN pip install --no-index /src/
 # stuff that will configure and run the tests
 ADD docker/inventory-example.yml /src/inventory-example.yml
 ADD docker/geninventory.py /usr/local/bin/geninventory
-CMD cd /src/ && geninventory && nosetests -vs tests/general_tests/
+CMD cd /src/ && geninventory && nosetests -vs
